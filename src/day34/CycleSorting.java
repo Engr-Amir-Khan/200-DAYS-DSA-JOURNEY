@@ -6,23 +6,21 @@ public class CycleSorting {
 
 
         int n = arr.length;
-        int i=0;
+
+        int i =0;
         while (i<n){
-            int correctIndex = arr[i] -1;
-
-            if(arr[i] != arr[correctIndex]){
-
-                int swapValue = arr[i];
-                arr[i] = arr[correctIndex];
-                arr[correctIndex] = swapValue;
-
-
-            }else{
+            if(arr[i] == i+1){
                 i++;
+            }else{
+                int idx = arr[i] -1;
+
+                int temp = arr[i];
+                arr[i] = arr[idx];
+                arr[idx] = temp;
             }
         }
-        for(int elem : arr){
-            System.out.print(elem + " ");
+        for(int elem: arr){
+            System.out.print( elem +  " ");
         }
     }
 }
