@@ -73,8 +73,8 @@ public class OwnLinkedList {
         ll.addAtHead(100);
         ll.addAtHead(10000);
 
-        ll.deleteAtHead();
-        ll.deleteAtHead();
+//        ll.deleteAtHead();
+//        ll.deleteAtHead();
         ll.display();
     }
 }
